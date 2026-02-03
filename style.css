@@ -1,0 +1,39 @@
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#clock {
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+}
+
+.hour { height: 4px; }
+.second { background: red; }
+
+.spider {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
